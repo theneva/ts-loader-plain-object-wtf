@@ -6,6 +6,12 @@ function test(input) {
   console.log('correctType', correctType);
   console.log('notNull', notNull);
   console.log('correctPrototype', correctPrototype);
+
+  return (
+    typeof input === 'object' &&
+    input !== null &&
+    Object.getPrototypeOf(input) === Object.prototype
+  );
 }
 
 module.exports.default = test;

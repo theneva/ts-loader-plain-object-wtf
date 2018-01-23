@@ -4,4 +4,5 @@ let data = {
   name: 'banana',
 }
 
-test(data);
+const res = test(data);
+console.log('res', res);
